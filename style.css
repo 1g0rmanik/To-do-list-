@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700');
+        /*Make background blue color and add style text*/
+        html{
+            font-family: 'Arimo', sans-serif;
+            background-color: rgb(0, 140, 255);
+        }
+        /*Create style for container task*/
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content:baseline;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: rgb(206, 206, 206);
+        }
+        /*Create style for button "add task"*/
+        .btn{
+            background-image: url("Images/add.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+         /*Create style for button "delete all tasks"*/
+        .btnd{
+            background-image: url("Images/delete.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        /*Create style for button in task "delete task"*/
+        .btnr{
+            background-image: url("Images/delete.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 30px;
+            width: 30px;
+            margin-left: 100px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        /*Move the buttons in .task*/
+        .buttons{
+            margin-left: 265px;
+            margin-top: -33px;
+        }
+        /*Create style for text-input*/
+        #text {
+            margin-left: 50px;
+            height: 30px;
+            width: 200px;
+            cursor: pointer;
+        }
+        /*Create style for .box, if checkbox is checked*/
+        .box.completed {
+            background-color: lightgreen;
+        }
+        /*Create style for container .task*/
+        .task{
+            margin-top: 20px;
+            width: 400px;
+            height: 650px;
+            background-color: azure;
+            border-radius: 15px;
+        }
+        @media(min-width: 1028px){
+            .task{
+                margin-left: 550px;
+            }
+        }
+        h2{
+            text-align: center;
+        }
+        input{
+            margin-left: 70px;
+        }
